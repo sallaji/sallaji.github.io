@@ -15,6 +15,16 @@ const projects = [
             "Applied Sciences.",
         img: "https://raw.githubusercontent.com/sallaji/grails-project-example/master/readmeassets/announcements.JPG",
         link: "https://github.com/sallaji/grails-project-example"
+    },
+
+    {
+        date: "2018-06-11",
+        title: "Grails Example Project",
+        description: "This project was created in order to explore the functionalities offered by grails. This project " +
+            "was inspired by the Web Engineering module taught by Professor Dierk König at the FHNW University of " +
+            "Applied Sciences.",
+        img: "https://raw.githubusercontent.com/sallaji/grails-project-example/master/readmeassets/announcements.JPG",
+        link: "https://github.com/sallaji/grails-project-example"
     }
 ];
 
