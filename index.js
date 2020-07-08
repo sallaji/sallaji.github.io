@@ -15,6 +15,13 @@ const projects = [
             "Applied Sciences.",
         img: "https://raw.githubusercontent.com/sallaji/grails-project-example/master/readmeassets/announcements.JPG",
         link: "https://github.com/sallaji/grails-project-example"
+    },
+    {
+        date: "2018-06-11",
+        title: "React SPA and GitHub jobs API",
+        description: "",
+        img: "https://raw.githubusercontent.com/sallaji/grails-project-example/master/readmeassets/announcements.JPG",
+        link: "https://github.com/sallaji/grails-project-example"
     }
 ];
 
