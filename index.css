@@ -17,7 +17,6 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-
 }
 
 header {
@@ -44,8 +43,8 @@ svg:hover{
 
 section {
     padding-bottom: 120px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 section > h1:first-child {
@@ -53,9 +52,17 @@ section > h1:first-child {
     padding: 1rem;
 }
 
+.grid{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 1fr;
+
+}
+
 #repositories {
     list-style: none;
     text-align: center;
+    padding: 0;
 }
 
 .repository-item {
