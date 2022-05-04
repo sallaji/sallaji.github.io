@@ -1,31 +1,69 @@
 const projects = [
     {
+        date: "2021-03-30",
+        title: "Multi-container Docker Single Web Application",
+        technologies: "JavaScript, ReactJS, Mongoose, Passport, MaterialUI,Docker, Nginx, " +
+            "SSL/TLS Let's Encrypt Certificate, Shell, npm, NodeJS, Debian Linux Distribution, DigitalOcean, Namecheap",
+        description: "This application is a simple example of a user management system. A new user can register using " +
+            "a name, password and selecting the user type. Administrator users have the right to read and edit data. " +
+            "Normal users can only read data. The application is a multi-container docker application built upon a " +
+            "client-server architecture. For the client side (frontend) ReactJS is used which connects to the backend " +
+            "services developed using Mongoose, Nodexpress, Passport frameworks. The application has been deployed " +
+            "using CI/CD tools from GitHub, outlives in a Linux virtual machine hosted on Digital Ocean and is securely " +
+            "available through https://www.buscotienda.com.",
+        images: ["./resources/userlist_buscotienda.png",
+            "/resources/high_level_architecture_buscotienda.png",
+        ],
+        link: "https://www.buscotienda.com",
+        linkname: "go to buscotienda.com"
+    },
+    {
+        date: "2021-01-18",
+        title: "Simple timer application",
+        technologies: "Java 15, JavaFX, gradle",
+        description: "Simple timer developed using Java and JavaFX. The timer offers several input functionalities " +
+            "for configuring the time.",
+        images: ["./resources/started.jpg",
+            "/resources/time_over.jpg",
+        ],
+        link: "https://github.com/sallaji/timer",
+        linkname: "go to GitHub repository"
+    },
+    {
         date: "2020-08-23",
-        title: "Single Page Application (SPA) using ReactJS, Mongoose, Passport, NodeJS",
+        title: "Single Page Application (SPA)",
+        technologies: "JavaScript, npm, NodeJS, ReactJS, Mongoose, Passport, MaterialUI",
         description: "this project consists of a web application for the registration and monitoring of events. " +
             "The project is divided into frontend (client side) and backend (server side).",
-        images: ["https://github.com/sallaji/event-tracking-app/blob/master/resources/event_page.png?raw=true",
-            "https://github.com/sallaji/event-tracking-app/blob/master/resources/event_details.png?raw=true",
-            "https://github.com/sallaji/event-tracking-app/blob/master/resources/create_event.gif?raw=true",
+        images: ["./resources/login_success.gif",
+            "./resources/login_failed.gif",
+            "./resources/create_event.gif",
+            "./resources/search_query.gif",
+            "./resources/filter_and_sort.gif",
         ],
-        link: "https://github.com/sallaji/event-tracking-app"
+        link: "https://github.com/sallaji/event-tracking-app",
+        linkname: "go to GitHub repository"
     },
     {
         date: "2019-06-30",
         title: "Game for user touch data analysis",
+        technologies: "Python, C#, Unity, Jupyter Notebook",
         description: "This project contains a game created in unity in order to collect user touch data. In addition, " +
             "it has a python script (jupyter notebook) with different functions for the analysis of user data collected through the game.",
-        images: ["https://github.com/sallaji/game_for_touch_gesture_data_analysis/raw/master/readmepics/shapematch_grid_scene.JPG"],
-        link: "https://github.com/sallaji/game_for_touch_gesture_data_analysis"
+        images: ["./resources/shapematch_grid_scene.jpg"],
+        link: "https://github.com/sallaji/game_for_touch_gesture_data_analysis",
+        linkname: "go to GitHub repository"
     },
     {
         date: "2018-06-11",
         title: "Grails Example Project",
+        technologies: "Java, Grails, Gradle",
         description: "This project was created in order to explore the functionalities offered by grails. This project " +
             "was inspired by the Web Engineering module taught by Professor Dierk König at the FHNW University of " +
             "Applied Sciences.",
-        images: ["https://raw.githubusercontent.com/sallaji/grails-project-example/master/readmeassets/announcements.JPG"],
-        link: "https://github.com/sallaji/grails-project-example"
+        images: ["./resources/announcements.png"],
+        link: "https://github.com/sallaji/grails-project-example",
+        linkname: "go to GitHub repository"
     }
 ];
 
@@ -46,11 +84,14 @@ const carousel = (images, projectTitle) => {
       padding: 1rem;
       background-color: rgba(241,241,241,0.96);
       ">
-        <img src="${image}" alt="${projectTitle}"
+      <a href="${image}" target="_blank">
+              <img src="${image}" alt="${projectTitle}"
         style="
             object-fit: contain;
             height:95%;
             width: 95%"/>
+</a>
+
         <div style="
             bottom: 0;
             margin-left: auto;
@@ -90,7 +131,7 @@ const carousel = (images, projectTitle) => {
             idx = (idx + 1) === children.length ? 0 : idx + 1;
             current = children[idx];
 
-        }, 3000)
+        }, 4000)
     };
     repeat();
 
@@ -108,8 +149,9 @@ projects.forEach(project => {
         <div>
             <h2>${project.title}</h2>
             <small>${project.date}</small>
+            <p><strong>Technologies: </strong>${project.technologies}</p>
             <p>${project.description}</p>
-            <a class="button" href="${project.link}" target="_blank">Link to repository</a>
+            <a class="button" href="${project.link}" target="_blank">${project.linkname}</a>
         </div>
     `;
     child.appendChild(carousel1);

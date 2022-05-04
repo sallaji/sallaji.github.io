@@ -4,6 +4,7 @@
     --color-primary: #006eed;
     --color-primary-dark: #005ab3;
     --color-secondary-dark: #333333;
+    --color-gray-dark: #444444;
 }
 
 html {
@@ -95,6 +96,11 @@ section > h1:first-child {
     font-style: italic;
     padding-left: 0.5rem;
     font-size: 0.75rem;
+}
+
+.repository-item > div:first-child > p:first-of-type{
+    font-size: 0.8rem;
+    color: var(--color-gray-dark);
 }
 
 .button{
