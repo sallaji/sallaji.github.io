@@ -1,9 +1,9 @@
 const projects = [
     {
-        date: "2021-03-30",
+        date: "2022-03-25",
         title: "Online Handwriting Data Collection System",
         keywords: "Python, Kotlin, Flask, SQLAlchemy, Alembic, PyJWT, Gunicorn, Jetpack Compose, Retrofit, OkHttp, " +
-            "Dagger Hilt, Room, SQLite, PostgreSQL, REST API, Docker, Certbot, Shell, Bash, gradle, AWS, GitLab CICD" +
+            "Dagger Hilt, Room, SQLite, PostgreSQL, REST API, Docker, Certbot, Shell, Bash, gradle, AWS, GitLab CI/CD, " +
             "DNS Provider(cyon.ch)",
         description: "The data collector is a dedicated system that enables the capture and centralized storage of " +
             "online handwritings (i.e, single characters, words, and sentences) using an android device and a digital " +
@@ -19,7 +19,7 @@ const projects = [
         images: ["./resources/data_collector.png",
             "./resources/pentool_environment.jpg",
         ],
-        link: "https://www.buscotienda.com",
+        link: "https://rdpen.ch/api/v1",
         linkname: "Link REST API"
     },
     {
@@ -56,7 +56,7 @@ const projects = [
         date: "2020-08-23",
         title: "Single Page Application (SPA)",
         keywords: "JavaScript, npm, NodeJS, ReactJS, Mongoose, Passport, MaterialUI",
-        description: "this project consists of a web application for the registration and monitoring of events. " +
+        description: "This project consists of a web application for the registration and monitoring of events. " +
             "The project is divided into frontend (client side) and backend (server side).",
         images: ["./resources/login_success.gif",
             "./resources/login_failed.gif",
