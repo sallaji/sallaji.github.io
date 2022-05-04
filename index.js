@@ -1,8 +1,31 @@
 const projects = [
     {
         date: "2021-03-30",
+        title: "Online Handwriting Data Collection System",
+        keywords: "Python, Kotlin, Flask, SQLAlchemy, Alembic, PyJWT, Gunicorn, Jetpack Compose, Retrofit, OkHttp, " +
+            "Dagger Hilt, Room, SQLite, PostgreSQL, REST API, Docker, Certbot, Shell, Bash, gradle, AWS, GitLab CICD" +
+            "DNS Provider(cyon.ch)",
+        description: "The data collector is a dedicated system that enables the capture and centralized storage of " +
+            "online handwritings (i.e, single characters, words, and sentences) using an android device and a digital " +
+            "pen equipped with EMR technology. The system is divided into two main sides, a server-side and a " +
+            "client-side. On the server side a AWS EC2 Linux virtual machine hosts a Docker multi-container application" +
+            " consisting of running docker instances of two PostgreSQL database servers, a REST API and a proxy server" +
+            " for centralized data storage and provisioning over a secure HTTPS connection. On the client side an" +
+            " application for android tablets and digital pens with EMR technology allows endusers the online" +
+            " handwriting of text which can be sent to the server for its storage in the database through REST API" +
+            " calls. The system also uses GitLab's CI/CD services for the automated continuous integration and " +
+            "deployment of server-side components. The REST API is accessible through the following URL: " +
+            "https://rdpen.ch/api/v1/",
+        images: ["./resources/data_collector.png",
+            "./resources/pentool_environment.jpg",
+        ],
+        link: "https://www.buscotienda.com",
+        linkname: "Link REST API"
+    },
+    {
+        date: "2021-03-30",
         title: "Multi-container Docker Single Web Application",
-        technologies: "JavaScript, ReactJS, Mongoose, Passport, MaterialUI,Docker, Nginx, " +
+        keywords: "JavaScript, ReactJS, Mongoose, Passport, MaterialUI,Docker, Nginx, " +
             "SSL/TLS Let's Encrypt Certificate, Shell, npm, NodeJS, Debian Linux Distribution, DigitalOcean, Namecheap",
         description: "This application is a simple example of a user management system. A new user can register using " +
             "a name, password and selecting the user type. Administrator users have the right to read and edit data. " +
@@ -20,7 +43,7 @@ const projects = [
     {
         date: "2021-01-18",
         title: "Simple timer application",
-        technologies: "Java 15, JavaFX, gradle",
+        keywords: "Java 15, JavaFX, gradle",
         description: "Simple timer developed using Java and JavaFX. The timer offers several input functionalities " +
             "for configuring the time.",
         images: ["./resources/started.jpg",
@@ -32,7 +55,7 @@ const projects = [
     {
         date: "2020-08-23",
         title: "Single Page Application (SPA)",
-        technologies: "JavaScript, npm, NodeJS, ReactJS, Mongoose, Passport, MaterialUI",
+        keywords: "JavaScript, npm, NodeJS, ReactJS, Mongoose, Passport, MaterialUI",
         description: "this project consists of a web application for the registration and monitoring of events. " +
             "The project is divided into frontend (client side) and backend (server side).",
         images: ["./resources/login_success.gif",
@@ -47,7 +70,7 @@ const projects = [
     {
         date: "2019-06-30",
         title: "Game for user touch data analysis",
-        technologies: "Python, C#, Unity, Jupyter Notebook",
+        keywords: "Python, C#, Unity, Jupyter Notebook",
         description: "This project contains a game created in unity in order to collect user touch data. In addition, " +
             "it has a python script (jupyter notebook) with different functions for the analysis of user data collected through the game.",
         images: ["./resources/shapematch_grid_scene.jpg"],
@@ -57,7 +80,7 @@ const projects = [
     {
         date: "2018-06-11",
         title: "Grails Example Project",
-        technologies: "Java, Grails, Gradle",
+        keywords: "Java, Grails, Gradle",
         description: "This project was created in order to explore the functionalities offered by grails. This project " +
             "was inspired by the Web Engineering module taught by Professor Dierk König at the FHNW University of " +
             "Applied Sciences.",
@@ -149,7 +172,7 @@ projects.forEach(project => {
         <div>
             <h2>${project.title}</h2>
             <small>${project.date}</small>
-            <p><strong>Technologies: </strong>${project.technologies}</p>
+            <p><strong>Keywords: </strong>${project.keywords}</p>
             <p>${project.description}</p>
             <a class="button" href="${project.link}" target="_blank">${project.linkname}</a>
         </div>
