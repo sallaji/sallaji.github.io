@@ -28,18 +28,30 @@ header {
     z-index: 1;
     display: flex;
     align-items: center;
-}
-svg {
-    fill: #b7b7b7;
-    padding-left: 1rem;
-    transition: 0.3s;
-    cursor: pointer;
+    justify-content: space-around;
 }
 
-svg:hover{
-    fill: white;
-    padding-left: 1rem;
+header >  a{
+    margin: 0 1rem;
+    padding: 0.5rem;
+    border: #b7b7b7 1px solid;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #b7b7b7;
+    fill: #b7b7b7;
+    display: inline-flex;
+    align-items: center;
     transition: 0.3s;
+    height:32px;
+}
+header >  a:hover{
+    border: white 1px solid;
+    color: white;
+    fill: white;
+    transition: 0.3s;
+}
+svg {
+    padding-right: 1rem;
 }
 
 section {
