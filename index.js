@@ -1,5 +1,16 @@
 const projects = [
     {
+        date: "2022-05-19",
+        title: "sallaji.github.io",
+        keywords: "HTML, CSS, JavaScript",
+        description: "A simple web page to show some of the projects I have been involved in.",
+        images: ["./resources/sallajigithub.jpg",
+        ],
+        link: "https://github.com/sallaji/sallaji.github.io",
+        linkname: "go to GitHub repository"
+    },
+
+    {
         date: "2022-03-25",
         title: "Online Handwriting Data Collection System",
         keywords: "Python, Kotlin, Flask, SQLAlchemy, Alembic, PyJWT, Gunicorn, Jetpack Compose, Retrofit, OkHttp, " +
