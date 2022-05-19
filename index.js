@@ -4,7 +4,7 @@ const projects = [
         title: "sallaji.github.io",
         keywords: "HTML, CSS, JavaScript",
         description: "A simple web page to show some of the projects I have been involved in.",
-        images: ["./resources/sallajigithub.jpg",
+        images: ["./resources/sallajigithub.JPG",
         ],
         link: "https://github.com/sallaji/sallaji.github.io",
         linkname: "go to GitHub repository"
